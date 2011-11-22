@@ -21,7 +21,8 @@ Detector = {
 		domElement.style.color = '#000';
 		domElement.style.padding = '1em';
 		domElement.style.width = '475px';
-		domElement.style.margin = '5em 0 0 0';
+		domElement.style.margin = '0 0 0 0';
+		domElement.style.position = 'absolute';
 
 		if ( ! this.webgl ) {
 
