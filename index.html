@@ -87,7 +87,7 @@
 
 				var MATERIAL_COUNT = 30;
 				var CUBE_SIZE = 300;
-				var CUBE_INCREMENT = 100;
+				var CUBE_INCREMENT = 20;
 				var SPREAD = 1000;
 
 				var scene;
@@ -137,6 +137,18 @@
 					var light2 = new THREE.PointLight(0xFFFFFF, 1);
 					light2.position = new THREE.Vector3(1000, 1000, 1000);
 					scene.add(light2);
+
+					var light3 = new THREE.PointLight(0xFFFFFF, 1);
+					light3.position = new THREE.Vector3(-1000, -1000, 1000);
+					scene.add(light3);
+
+					var light4 = new THREE.PointLight(0xFFFFFF, 1);
+					light4.position = new THREE.Vector3(-1000, -1000, -1000);
+					scene.add(light4);
+
+					var light4 = new THREE.PointLight(0xFFFFFF, 1);
+					light4.position = new THREE.Vector3(-1000, -1000, -1000);
+					scene.add(light4);
 
 					//init materials
 					var materialClass = WebGLSupported ? THREE.MeshLambertMaterial : THREE.MeshBasicMaterial;				
